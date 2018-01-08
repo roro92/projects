@@ -1,0 +1,266 @@
+body {
+    /* lade till allt som hör till body under samma bracket */
+    margin: 0;
+    padding: 0;
+    font-family: 'Oleo Script', cursive;
+    /* bytte font-family */
+    background: #FFF;
+    color: #29a39f;
+}
+
+.price_columns {
+    float: left;
+    width: 33.3%;
+    min-width: 300px;
+    padding: 0.500em;
+    box-sizing: border-box;
+}
+
+.price {
+    list-style-type: none;
+    border: 0.063em solid #eee;
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+}
+
+.price:hover {
+    box-shadow: 0 0.500em 0.750em 0
+}
+
+.price .priceheader {
+    background-color: #29a39f;
+    color: white;
+    font-size: 1.563em;
+}
+
+.price li {
+    border-bottom: 0.063em solid #eee;
+    padding: 1.250em;
+    text-align: center;
+}
+
+.price .grey {
+    background-color: #FFFFEF;
+    font-size: 1.250em;
+}
+
+.pricebutton {
+    background-color: #29a39f;
+    border: none;
+    color: white;
+    padding: 0.625em 1.563em;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.125em;
+}
+
+h2 {
+    color: white;
+    float: right;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 0.875em;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    background-color: #29a39f;
+}
+
+.text {
+    /* lade till allt som hör till .text under samma bracket */
+    position: absolute;
+    top: 9.375em;
+    left: 18.750em;
+    width: 18.750em;
+    column-count: 2;
+    font-family: 'Spectral SC', serif;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #29a39f;
+    color: white;
+    text-align: center;
+}
+
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+.banner-img {
+    width: 100%;
+    height: 43.750em;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.themes-container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.themes-container>div {
+    width: 18.750em;
+    text-align: justify;
+}
+
+@media screen and (max-width: 1025px) {
+    .nav-bar {
+        width: 100%;
+        float: right;
+    }
+    .container {
+        width: auto;
+        text-align: right;
+    }
+    .li a {
+        width: auto;
+        text-align: center;
+    }
+    .banner-img {
+        width: 64.000em;
+        align-content: center;
+        height: 81.250em;
+    }
+    .image-text {
+        width: auto;
+        float: left;
+        align-content: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-bar {
+        width: 100%;
+        float: right;
+    }
+    .container {
+        width: auto;
+        text-align: right;
+    }
+    .li a {
+        width: auto;
+        text-align: center;
+    }
+    .banner-img {
+        width: 48.000em;
+        align-content: center;
+        height: 62.500em;
+    }
+    .image-text {
+        width: auto;
+        float: left;
+        align-content: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav {
+        position: absolute;
+        top: 3.5em;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    .nav li a {
+        display: block;
+        color: white;
+        text-align: left;
+        padding: 0.5em;
+        text-decoration: none;
+    }
+    .text {
+        position: absolute;
+        top: 9.375em;
+        left: 0.750em;
+        width: 18.750em;
+        column-count: 2;
+        font-family: 'Spectral SC', serif;
+    }
+    .nav-bar {
+        width: 100%;
+        float: right;
+    }
+    .container {
+        width: auto;
+        align-content: center;
+        text-align: center;
+    }
+    .li a {
+        width: 100%;
+    }
+    .banner-img {
+        width: 100%;
+        height: 50.000em;
+        align-content: center;
+    }
+    .image-text {
+        width: auto;
+        float: left;
+        align-content: center;
+        text-align: center;
+    }
+    .wrapper {
+        width: 100%;
+        align-content: center;
+    }
+    .banner {
+        width: 100%;
+        align-content: center;
+        text-align: center;
+    }
+    .text {
+        align-content: center;
+    }
+}
